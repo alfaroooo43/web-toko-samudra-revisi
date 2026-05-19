@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+    <?php
+        $basePath = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\');
+        $assetBase = ($basePath === '' || $basePath === '.') ? '' : $basePath;
+    ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Toko Samudra - Toko Sepatu Terlengkap dengan Koleksi Terbaik. Temukan sepatu impianmu di sini.">
@@ -8,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="<?= $assetBase ?>/assets/css/style.css?v=20260519">
 </head>
 <body>
 
